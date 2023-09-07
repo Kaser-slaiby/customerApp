@@ -18,4 +18,9 @@ export class DataService {
   insertData(data: Employee) {
     return this.httpClient.post('http://127.0.0.1/laravel_api/public/api/addemployee', data);
   }
+
+  deleteData(id: string | number) {
+    return this.httpClient.delete('http://127.0.0.1/laravel_api/public/api/deleteemployee/'+id);
+
+  }
 }

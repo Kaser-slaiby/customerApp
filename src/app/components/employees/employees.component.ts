@@ -30,4 +30,10 @@ export class EmployeesComponent {
     this.getEmployeesData();
   })
   }
+
+  deleteData(id: any) {
+    this.dataService.deleteData(id).subscribe(res => {
+      this.getEmployeesData();
+    })
+  }
 }
