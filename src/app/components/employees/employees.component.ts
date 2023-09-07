@@ -22,4 +22,8 @@ export class EmployeesComponent {
    });
   }
 
+  insertData() {
+    console.log('Test');
+  }
+
 }
