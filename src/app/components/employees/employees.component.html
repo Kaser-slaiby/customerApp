@@ -1,21 +1,39 @@
 <form (ngSubmit)="insertData()">
   <div class="form-group">
     <label for="exampleInputName">Name</label>
-    <input type="name" class="form-control" placeholder="Enter name" />
+    <input
+      type="text"
+      name="name"
+      class="form-control"
+      placeholder="Enter name"
+      [(ngModel)]="employee.name"
+    />
     <small id="emailHelp" class="form-text text-muted"
       >Your first name only</small
     >
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" placeholder="Enter email" />
+    <input
+      type="text"
+      name="email"
+      class="form-control"
+      placeholder="Enter email"
+      [(ngModel)]="employee.email"
+    />
     <small id="emailHelp" class="form-text text-muted"
       >We'll never share your email with anyone else.</small
     >
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Salary address</label>
-    <input type="salary" class="form-control" placeholder="Enter salary" />
+    <input
+      type="text"
+      name="salary"
+      class="form-control"
+      placeholder="Enter salary"
+      [(ngModel)]="employee.salary"
+    />
     <small id="salaryHelp" class="form-text text-muted"
       >Enter expected salary</small
     >

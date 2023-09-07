@@ -1,6 +1,7 @@
 import { DataService } from './../../service/data.service';
 import { Component } from '@angular/core';
 import { Employee } from 'src/app/employee';
+import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-employees',
@@ -21,11 +22,12 @@ export class EmployeesComponent {
   getEmployeesData() {
    this.dataService.getData().subscribe(res => {
     this.employees = res; 
-   });
+  });
   }
 
   insertData() {
-    console.log('Test');
+    this.dataService.insertData(this.employee).subscribe(res => {
+    this.getEmployeesData();
+  })
   }
-
 }
