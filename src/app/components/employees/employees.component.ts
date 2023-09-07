@@ -1,3 +1,4 @@
+import { DataService } from './../../service/data.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./employees.component.css']
 })
 export class EmployeesComponent {
+  employees:any;
+
+  constructor(private dataService:DataService) {}
+
+  ngOnInit(): void{
+    this.getEmployeesData();
+  }
+
+
+  getEmployeesData() {
+   this.dataService.getData().subscribe(res => {
+    this.employees = res; 
+   });
+  }
 
 }
