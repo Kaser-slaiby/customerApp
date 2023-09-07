@@ -1,5 +1,6 @@
 import { DataService } from './../../service/data.service';
 import { Component } from '@angular/core';
+import { Employee } from 'src/app/employee';
 
 @Component({
   selector: 'app-employees',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class EmployeesComponent {
   employees:any;
+  employee = new Employee();
 
   constructor(private dataService:DataService) {}
 

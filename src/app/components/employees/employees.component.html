@@ -1,36 +1,44 @@
 <form (ngSubmit)="insertData()">
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" name="name" class="from-control">
-    </div>
-    <div class="form-group">
-        <label for="name">Email</label>
-        <input type="text" name="email" class="from-control">
-    </div>
-    <div class="form-group">
-        <label for="name">Salary</label>
-        <input type="text" name="salary" class="from-control">
-    </div>
+  <div class="form-group">
+    <label for="exampleInputName">Name</label>
+    <input type="name" class="form-control" placeholder="Enter name" />
+    <small id="emailHelp" class="form-text text-muted"
+      >Your first name only</small
+    >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" placeholder="Enter email" />
+    <small id="emailHelp" class="form-text text-muted"
+      >We'll never share your email with anyone else.</small
+    >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Salary address</label>
+    <input type="salary" class="form-control" placeholder="Enter salary" />
+    <small id="salaryHelp" class="form-text text-muted"
+      >Enter expected salary</small
+    >
+  </div>
 
-    <button class="btn btn-dark btn-sm mt-4">Submit</button>
+  <button class="btn btn-dark btn-sm mt-4">Submit</button>
 </form>
 
-
 <table class="table">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Salary</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let emp of employees">
-            <th scope="row">{{ emp.id }}</th>
-            <td>{{ emp.name }}</td>
-            <td>{{ emp.email }}</td>
-            <td>{{ emp.salary }}</td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employees">
+      <th scope="row">{{ emp.id }}</th>
+      <td>{{ emp.name }}</td>
+      <td>{{ emp.email }}</td>
+      <td>{{ emp.salary }}</td>
+    </tr>
+  </tbody>
 </table>
