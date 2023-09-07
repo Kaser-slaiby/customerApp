@@ -1,7 +1,7 @@
 # CustomerApp
 
-a-- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
-b-- node -v => v18.17.1
+a** This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+b** node -v => v18.17.1
 
 ## Development server
 
@@ -9,8 +9,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Commands are important
 
-a-- ng g c components/employees
-b-- ng g s service/data
+a** ng g c components/employees
+b** ng g s service/data
 
 ## Code scaffolding
 
