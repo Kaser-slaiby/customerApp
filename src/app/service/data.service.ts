@@ -23,4 +23,9 @@ export class DataService {
     return this.httpClient.delete('http://127.0.0.1/laravel_api/public/api/deleteemployee/'+id);
 
   }
+
+  getEmployeeById(id: string){
+    return this.httpClient.get('http://127.0.0.1/laravel_api/public/api/employee/'+id);
+
+  }
 }
