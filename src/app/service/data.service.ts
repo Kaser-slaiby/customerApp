@@ -28,4 +28,8 @@ export class DataService {
     return this.httpClient.get('http://127.0.0.1/laravel_api/public/api/employee/'+id);
 
   }
+
+  updateData(id: any, data: Employee) {
+    return this.httpClient.put('http://127.0.0.1/laravel_api/public/api/updateemployee'+id, data);
+  }
 }
