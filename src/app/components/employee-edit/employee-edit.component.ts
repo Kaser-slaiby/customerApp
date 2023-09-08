@@ -28,4 +28,8 @@ export class EmployeeEditComponent implements OnInit {
       this.employee = this.data;
     })
    }
+
+   updateEmployee() {
+    
+   }
 }
